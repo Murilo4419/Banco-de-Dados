@@ -6,7 +6,7 @@ try: # Tenta executar os comandos abaixo
 
     cursor = banco.cursor() # Utiliza o cusor do banco de dados para executar instruções SQL
 
-    cursor.execute("CREATE TABLE aluno(id_aluno int, Nome text, idade int, email text)") # Executa o comando dado  
+    cursor.execute("CREATE TABLE aluno(id_aluno int, Nome text, idade int, email text)") # Executa o comando dado de criar a tabela aluno
 
     cursor.execute("INSERT INTO aluno VALUES (1, 'JOÃO',20,'joaozinholeroy@gmail.com') ") # Executa o comando dado de adicionar Nome, Idade e Email referente ao id 1
     cursor.execute("INSERT INTO aluno VALUES (2, 'jheimes',25,'rick@gmail.com') ") # Executa o comando dado de adicionar Nome, Idade e Email referente ao id 2
