@@ -1,0 +1,19 @@
+import sqlite3 
+
+conexao = sqlite3.connect("escola.db")
+
+cursor = conexao.cursor()
+
+print("Banco conectado!")
+
+
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS alunos(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+nome TEXT NOT NULL,
+idade INTEGER,
+cursi TEXT
+)
+""")
+
+conexao.close()
